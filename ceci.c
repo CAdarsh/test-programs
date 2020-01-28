@@ -1,19 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
-char message[100],ch;
-int i,key;
 void inputmessage()
 	{
+		char message[100];
 		printf("enter the message:\n");
 		scanf("%s",message);
 	}
 void key_input()
 {
+	int key;
 	printf("enter the key:\n");
 	scanf("%d",&key);
 }
 void encryption()
 {
+	int i, key;
+	char message[100],ch;
 	for(i=0;message[i]!='\0';++i)
 	{
 		ch=message[i];
@@ -40,6 +42,8 @@ void encryption()
 }
 void decryption()
 {
+	int i,key;
+	char message[100],ch;
 	for(i=0;message[i]!='\0';++i)
 	{
 		ch=message[i];
